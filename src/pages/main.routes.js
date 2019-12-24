@@ -18,7 +18,7 @@ const MainRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={LoadableLanding} />
-      <Route exact path="/movie" component={LoadableMovie} />
+      <Route path="/movie" component={LoadableMovie} />
       <Route exact path="/theater" component={LoadableTheater} />
     </Switch>
   );

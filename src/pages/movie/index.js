@@ -1,9 +1,7 @@
 import React from 'react';
 
-import MovieContent from 'pages/movie/movie.content';
+import MovieRoutes from 'pages/movie/movie.routes';
 
-const Movie = () => {
-  return <MovieContent />;
-};
+const Movie = () => <MovieRoutes />;
 
 export default Movie;
