@@ -1,21 +1,24 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "sourceType": "module",
     "allowImportExportEverywhere": false,
-    "codeFrame": false
+    "codeFrame": false,
+    "sourceType": "module"
   },
   "extends": ["airbnb", "prettier"],
+  "plugins": ["react-hooks"],
   "env": {
     "browser": true,
     "jest": true
   },
   "rules": {
-    "max-len": ["error", { "code": 100 }],
+    "jsx-a11y/anchor-is-valid": ["off"],
+    "max-len": ["off"],
+    "no-return-assign": ["off"],
     "prefer-promise-reject-errors": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/prop-types": ["warn"],
-    "no-return-assign": ["off"]
+    "react-hooks/exhaustive-deps": ["off"]
   },
   "settings": {
     "import/resolver": {
