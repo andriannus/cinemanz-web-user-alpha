@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import TheaterContext from 'pages/theater/shared/services/theater.context';
 
@@ -38,7 +39,7 @@ const Content = () => {
 };
 
 const ListTheater = () => {
-  const { paginatedData } = useContext(TheaterContext);
+  const { paginatedData, pathname } = useContext(TheaterContext);
 
   if (!paginatedData.data) return null;
 
@@ -48,7 +49,9 @@ const ListTheater = () => {
         return (
           <article key={data.id} className="media">
             <div className="media-content">
-              <p>{data.name}</p>
+              <div className="content">
+                <Link to={`${pathname}/${data.id}`}>{data.name}</Link>
+              </div>
             </div>
           </article>
         );

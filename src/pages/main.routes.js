@@ -19,7 +19,7 @@ const MainRoutes = () => {
     <Switch>
       <Route exact path="/" component={LoadableLanding} />
       <Route path="/movie" component={LoadableMovie} />
-      <Route exact path="/theater" component={LoadableTheater} />
+      <Route path="/theater" component={LoadableTheater} />
     </Switch>
   );
 };
