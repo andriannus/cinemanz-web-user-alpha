@@ -40,7 +40,7 @@ const List = () => {
 
     return () => source.cancel();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [skip]);
 
   const data = {
     data: theaters.data,
